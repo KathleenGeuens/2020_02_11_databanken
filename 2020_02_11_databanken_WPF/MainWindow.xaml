@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2020_02_11_databanken_WPF"
         mc:Ignorable="d"
-        Title="Oudleerlingen" Height="582.425" Width="765.667">
+        Title="Oudleerlingen" Height="582.425" Width="765.667" Background="Gray">
     <Grid>
         <ListBox x:Name="lbxOudleerlingen" HorizontalAlignment="Left" Height="150" Margin="10,10,0,0" VerticalAlignment="Top" Width="450" SelectionChanged="LbxOudleerlingen_SelectionChanged"/>
         <ListBox x:Name="lbxStudierichtingen" HorizontalAlignment="Left" Height="150" Margin="10,352,0,0" VerticalAlignment="Top" Width="450"/>
