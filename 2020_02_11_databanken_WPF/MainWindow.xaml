@@ -1,0 +1,36 @@
+﻿<Window x:Class="_2020_02_11_databanken_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2020_02_11_databanken_WPF"
+        mc:Ignorable="d"
+        Title="Oudleerlingen" Height="582.425" Width="765.667">
+    <Grid>
+        <ListBox x:Name="lbxOudleerlingen" HorizontalAlignment="Left" Height="150" Margin="10,10,0,0" VerticalAlignment="Top" Width="450" SelectionChanged="LbxOudleerlingen_SelectionChanged"/>
+        <ListBox x:Name="lbxStudierichtingen" HorizontalAlignment="Left" Height="150" Margin="10,352,0,0" VerticalAlignment="Top" Width="450"/>
+        <ListBox x:Name="lbxGevolgdeOpleidingenFromSelectedOLL" HorizontalAlignment="Left" Height="100" Margin="10,165,0,0" VerticalAlignment="Top" Width="450"/>
+        <Button x:Name="btnVoegStudieRichtingToe" Content="Voeg studierichting toe aan oudleerling" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" Width="446" Click="BtnVoegStudieRichtingToe_Click"/>
+        <Button x:Name="btnAfstuderen" Content="Laat student afstuderen(vul datum in!)" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" Width="446" Click="BtnAfstuderen_Click" />
+        
+        <StackPanel  HorizontalAlignment="Left" Height="175" Margin="465,10,0,0" VerticalAlignment="Top" Width="283">
+            <Label Content="Naam"/>
+            <TextBox x:Name="txtVoornaam" Height="23" TextWrapping="Wrap"/>
+            <Label Content="Familienaam"/>
+            <TextBox x:Name="txtFamilienaam" Height="23" TextWrapping="Wrap"/>
+            <Label Content="Richting in kOsh"/>
+            <TextBox x:Name="txtStudierichtingkOsh" Height="23" TextWrapping="Wrap"/>
+            <Button x:Name="btnAddOudleerling" Content="Voeg oudleerling toe" Click="BtnAddOudleerling_Click"/>
+        </StackPanel>
+        <StackPanel  HorizontalAlignment="Left" Height="150" Margin="465,300,0,0" VerticalAlignment="Top" Width="283">
+            <Label Content="Studierichting"/>
+            <TextBox x:Name="txtStudierichting" Height="23" TextWrapping="Wrap"/>
+            <Label Content="Hogeschool of Universiteit"/>
+            <TextBox x:Name="txtHogeschoolUnif" Height="23" TextWrapping="Wrap"/>
+
+            <Button x:Name="btnAddStudierichting" Content="Voeg studierichting toe" Click="BtnAddStudierichting_Click"/>
+        </StackPanel>
+        <Label Content="Datum afstuderen:" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="datePickerAfstuderen" HorizontalAlignment="Left" Margin="123,323,0,0" VerticalAlignment="Top" Width="156"/>
+    </Grid>
+</Window>
